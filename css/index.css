@@ -1,1 +1,253 @@
 /* 首页css样式 */
+
+/* 版心居中 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+    white-space: nowrap;
+}
+
+/* 背景颜色 */
+body {
+    background-color: #f3f5f7;
+}
+
+/* 头部区域 */
+.header {
+    height: 100px;
+    background-color: #fff;
+}
+
+.header .wrapper {
+    padding-top: 29px;
+    display: flex;
+}
+
+/* logo */
+.logo a {
+    display: block;
+    width: 195px;
+    height: 41px;
+    background-image: url(../images/logo.png);
+    font-size: 0;
+}
+
+/* 导航 */
+.nav {
+    margin-left: 102px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 24px;
+}
+
+.nav li a {
+    display: block;
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+/* active 类选择器，表示默认选中的a */
+.nav li .active,
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索 */
+.search {
+    display: flex;
+    margin-left: 64px;
+    width: 412px;
+    height: 40px;
+    padding-left: 19px;
+    padding-right: 12px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+}
+
+.search input {
+    flex: 1;
+    border: 0;
+    /* 透明背景色 */
+    background-color: transparent;
+    /* 去除表单的焦点框 */
+    outline: none;
+}
+
+/* ::placeholder 选中就是 placeholder 关键字样式 */
+.search input::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+
+.search a {
+    /* 纵轴居中 */
+    align-self: center;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/search.png);
+}
+
+/* 用户 */
+.user {
+    margin-top: 4px;
+    margin-left: 32px;
+}
+
+.user img {
+    /* 行内块和行内垂直方向对齐方式 */
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.user span {
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* banner区域 */
+.banner {
+    height: 420px;
+    background-color: #0092cb;
+}
+
+.banner .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+}
+
+/* 侧导航 */
+.banner .left {
+    padding: 3px 20px;
+    width: 191px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.42);
+}
+
+.banner .left a {
+    /* 块级：宽度是父级的100% */
+    display: block;
+    height: 46px;
+    background: url(../images/right.png) no-repeat right center;
+    line-height: 46px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.banner .left a:hover {
+    background-image: url(../images/right-hover.png);
+    color: #00a4ff;
+}
+
+
+/* 课程表布局 */
+.banner .right {
+    margin-top: 60px;
+    width: 218px;
+    height: 305px;
+    background-color: #209dd5;
+    border-radius: 10px;
+}
+
+.banner .right h3 {
+    margin-left: 14px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.banner .right .content {
+    padding: 14px;
+    height: 257px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+/* 课程表内容 */
+.banner .right dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.banner .right dt {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.banner .right dd {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.banner .right dd span {
+    color: #00a4ff;
+}
+
+.banner .right dd strong {
+    color: #7d7d7d;
+    font-weight: 400;
+}
+
+.banner .right a {
+    display: block;
+    height: 32px;
+    background-color: #00a4ff;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 15px;
+}
+
+
+/* 精品推荐 */
+.recommend {
+    display: flex;
+    margin-top: 11px;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+    line-height: 60px;
+}
+
+.recommend h3 {
+    font-size: 18px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+
+.recommend ul {
+    /* 除去标题和修改兴趣的尺寸，父级剩余尺寸都给ul，实现把修改兴趣挤到最右侧 */
+    flex: 1;
+    display: flex;
+}
+
+.recommend ul li a {
+    padding: 0 24px;
+    border-right: 1px solid #e0e0e0;
+    font-size: 18px;
+}
+
+.recommend ul li:last-child a {
+    border-right: 0;
+}
+
+.recommend .modify {
+    font-size: 16px;
+    color: #00a4ff;
+}
