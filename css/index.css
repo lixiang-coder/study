@@ -326,3 +326,38 @@ body {
 .bd li .text p i {
     font-style: normal;
 }
+
+
+/* 前端 */
+.hd ul {
+    display: flex;
+}
+
+.hd li {
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+.hd li .active {
+    color: #00a4ff;
+}
+
+.bd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd .left {
+    width: 228px;
+    /* background-color: pink; */
+}
+
+.bd .right {
+    width: 957px;
+    /* background-color: pink; */
+}
+
+.bd .right .top {
+    margin-bottom: 15px;
+    height: 100px;
+}
